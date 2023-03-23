@@ -11,7 +11,7 @@ const nav__links = [
     display: 'Home',
   },
   {
-    path: '#',
+    path: '/about',
     display: 'About',
   },
   {
@@ -38,9 +38,11 @@ const Header = () => {
               {
                 nav__links.map((item, index) => (
                   <li className='nav__item' key={index}>
-                    <NavLink to={item.path}>
+                      <a>
+                    <NavLink to={item.path} className={navClass => navClass.isActive ? 'active__link' : ''}>
                       {item.display}
                     </NavLink>
+                      </a>
                   </li>
                 ))
               }
@@ -61,6 +63,7 @@ const Header = () => {
               </Button>
             </div>
             <span className="mobile__menu">
+              <i class="ri-menu-line"></i>
             </span>
           </div>
           </div>
