@@ -1,7 +1,7 @@
 import React from 'react'
 import '../Headers/header.css'
 import { Container, Row, Button } from 'reactstrap'
-import { Navlink, Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 import logo from '../../assets/images/logo.png'
 
@@ -38,11 +38,30 @@ const Header = () => {
               {
                 nav__links.map((item, index) => (
                   <li className='nav__item' key={index}>
-                    {item.display}
+                    <NavLink to={item.path}>
+                      {item.display}
+                    </NavLink>
                   </li>
                 ))
               }
             </ul>
+          </div>
+
+          <div className="nav__right d-flex align-items-center gap-4">
+            <div className="nav__btns d-flex align-items-center gap-4">
+              <Button className='btn secondary__btn'>
+                <Link to='/login'>
+                  Login
+                </Link>
+              </Button>
+              <Button className='btn primary__btn'>
+                <Link to='/register'>
+                  Register
+                </Link>
+              </Button>
+            </div>
+            <span className="mobile__menu">
+            </span>
           </div>
           </div>
         </Row>
