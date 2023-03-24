@@ -12,3 +12,14 @@
     font-size: 1.8rem;
     color: #ee6e6e;
 }
+
+.form__group input {
+    border: none;
+    font-size: 0.9rem;
+    columns: var(--heading-color);
+}
+
+.form__group input:focus {
+    margin-bottom: 0;
+    font-weight: 500;
+}
