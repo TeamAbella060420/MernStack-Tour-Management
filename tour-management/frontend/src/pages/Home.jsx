@@ -17,13 +17,13 @@ const Home = () => {
             <Col lg='6'>
               <div className="hero__content">
                 <div className="hero__subtitle d-flex align-items-center">
-                  <Subtitle subtitle={'Know before you Go'}/>
+                  <Subtitle subtitle={'Know Before You Go'}/>
                   <img src={worldImg} alt="" />
                 </div>
-                <h1>Traveling opens the door to creating
+                <h1>Traveling opens the door to creating{" "}
                    <span className="highlight">memories</span>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe asperiores, quasi mollitia quos sit odit consequatur vitae quisquam eius nulla!</p>
                 </h1>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe asperiores, quasi mollitia quos sit odit consequatur vitae quisquam eius nulla!</p>
               </div>
             </Col>
           </Row>
