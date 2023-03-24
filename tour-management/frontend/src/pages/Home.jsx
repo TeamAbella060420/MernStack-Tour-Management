@@ -35,7 +35,7 @@ const Home = () => {
             </Col>
             <Col lg='2'>
               <div className="hero__img-box mt-4">
-                <video controls autoplay muted loop>
+                <video autoPlay loop>
                   <source src={heroVideo} alt="" type="video/mp4"/>
                 </video>
               </div>
