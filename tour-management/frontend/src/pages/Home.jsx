@@ -8,6 +8,8 @@ import worldImg from '../assets/images/world.png'
 import Subtitle from '../shared/Subtitle'
 import SearchBar from '../shared/SearchBar'
 
+import ServiceList from '../services/ServiceList'
+
 const Home = () => {
   return (
     <>
@@ -58,6 +60,8 @@ const Home = () => {
               <h5 className="services__subtitle">What we serve</h5>
               <h2 className='services__title'>We offer our best servises</h2>
             </Col>
+
+            <ServiceList />
           </Row>
         </Container>
       </section>
