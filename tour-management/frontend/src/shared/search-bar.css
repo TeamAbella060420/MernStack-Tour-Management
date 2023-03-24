@@ -21,5 +21,8 @@
 
 .form__group input:focus {
     margin-bottom: 0;
-    font-weight: 500;
+}
+
+.form__group-fast {
+    border-right: 2px solid #ddd;
 }
