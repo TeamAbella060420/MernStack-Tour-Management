@@ -1,9 +1,20 @@
 
-import React from 'react'
+import React, { useRef } from 'react'
 import { Col, Form, FormGroup } from 'reactstrap'
 import '../shared/search-bar.css'
 
 const SearchBar = () => {
+
+    const locationRef = useRef('');
+    const distanceRef = useRef(0);
+    const maxGroupSizeRef = useRef(0);
+
+    function searchHandler(params) {
+        const locationRef = locationRef.current.value
+        const distanceRef = distanceRef.current.value
+        const maxGroupSizeRef = maxGroupSizeRef.current.value
+    }
+
   return (
     <Col lg='12'>
         <div className="search__bar">
