@@ -2,6 +2,8 @@ import React from "react";
 import { Card, CardBody } from "reactstrap";
 import { Link } from 'react-router-dom'
 
+import './tour-card.css'
+
 const TourCard = ({ tour }) => {
   const { id, title, city, photo, price, featured, avgRating, reviews } = tour;
 
@@ -32,7 +34,7 @@ const TourCard = ({ tour }) => {
                 <h5>${price} <span> / per person</span></h5>
 
                 <button className="btn booking__btn">
-                    <Link>Book Now</Link>
+                    <Link to={`/tour/${id}`}>Book Now</Link>
                 </button>
             </div>
         </CardBody>
