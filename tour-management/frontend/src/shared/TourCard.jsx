@@ -9,9 +9,14 @@ const TourCard = ({ tour }) => {
     <div className="tour__card">
         <Card>
             <div className="tour__img">
-                <img src="" alt="" />
+                <img src={photo} alt="tour-image" />
+                <span>Featured</span>
             </div>
         </Card>
+        
+        <CardBody>
+
+        </CardBody>
     </div>
   );
 };
