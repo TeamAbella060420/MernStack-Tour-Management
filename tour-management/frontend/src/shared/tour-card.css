@@ -29,3 +29,29 @@
 .card__top span i {
     color: var(--secondary-color);
 }
+
+.tour__rating {
+    font-size: .9rem;
+    color: var(--text-color);
+}
+
+.tour__location {
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: .9rem;
+}
+
+.tour__rating i,
+.tour__location i {
+    font-size: 1rem;
+}
+
+.tour__title a{
+    margin-top: 1rem;
+    color: var(--heading-color);
+    transition: .3s;
+}
+
+.tour__title a:hover {
+    color: var(--secondary-color);
+}
