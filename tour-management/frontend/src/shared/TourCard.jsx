@@ -23,8 +23,11 @@ const TourCard = ({ tour }) => {
             <div className="card__top d-flex align-items-center justify-content-between">
                 <span className="tour__ratings d-flex align-items-center gap-1">
                     <i class="ri-star-fill"></i> {avgRating}
+                    <span>({reviews.length})</span>
                 </span>
             </div>
+
+            <h5 className="tour__title"><Link to={`/tour/${id}`}>{title}</Link></h5>
         </CardBody>
     </div>
   );
