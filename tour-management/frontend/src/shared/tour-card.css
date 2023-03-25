@@ -25,3 +25,7 @@
     padding: 0.3rem 0.5rem;
     border-radius: 3px 0 0 0;
 }
+
+.card__top span i {
+    color: var(--secondary-color);
+}
