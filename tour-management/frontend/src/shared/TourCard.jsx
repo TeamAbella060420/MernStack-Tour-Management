@@ -28,7 +28,7 @@ const TourCard = ({ tour }) => {
             </div>
 
             <h5 className="tour__title"><Link to={`/tour/${id}`}>{title}</Link></h5>
-            <div className="card__bottom d-flex align-items-center justify-content-between"></div>
+            <div className="card__bottom d-flex align-items-center justify-content-between mt-3"></div>
         </CardBody>
     </div>
   );
