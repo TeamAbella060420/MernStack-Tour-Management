@@ -46,12 +46,29 @@
     font-size: 1rem;
 }
 
-.tour__title a{
+.tour__title {
     margin-top: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.tour__title a{
+    text-decoration: none;
     color: var(--heading-color);
     transition: .3s;
 }
 
 .tour__title a:hover {
     color: var(--secondary-color);
+}
+
+.card__bottom h5 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.card__bottom h5 span {
+    font-weight: 500;
+    color: var(--text-color);
 }
