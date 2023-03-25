@@ -71,4 +71,5 @@
 .card__bottom h5 span {
     font-weight: 500;
     color: var(--text-color);
+    font-size: 0.8rem;
 }
