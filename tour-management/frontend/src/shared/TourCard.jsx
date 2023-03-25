@@ -20,6 +20,11 @@ const TourCard = ({ tour }) => {
                     <i class="ri-map-pin-line"></i> {city}
                 </span>
             </div>
+            <div className="card__top d-flex align-items-center justify-content-between">
+                <span className="tour__ratings d-flex align-items-center gap-1">
+                    <i class="ri-star-fill"></i> {avgRating}
+                </span>
+            </div>
         </CardBody>
     </div>
   );
