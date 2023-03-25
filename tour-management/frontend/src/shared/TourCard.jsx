@@ -3,7 +3,7 @@ import { Card, CardBody } from "reactstrap";
 import { Link } from 'react-router-dom'
 
 const TourCard = ({ tour }) => {
-  const { id, title, photo, price, featured, avgRating, reviews } = tour;
+  const { id, title, city, photo, price, featured, avgRating, reviews } = tour;
 
   return (
     <div className="tour__card">
@@ -13,9 +13,13 @@ const TourCard = ({ tour }) => {
                 <span>Featured</span>
             </div>
         </Card>
-        
-        <CardBody>
 
+        <CardBody>
+            <div className="card__top d-flex align-items-center justify-content-between">
+                <span className="tour__location d-flex align-items-center gap-1">
+                    <i class="ri-map-pin-line"></i> {city}
+                </span>
+            </div>
         </CardBody>
     </div>
   );
