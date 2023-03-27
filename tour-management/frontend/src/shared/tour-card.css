@@ -73,3 +73,18 @@
     color: var(--text-color);
     font-size: 0.8rem;
 }
+
+.booking__btn {
+    background: var(--secondary-color) !important;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem !important;
+}
+
+.booking__btn a {
+    text-decoration: none;
+    font-size: .9rem;
+    color: #fff;
+}
+.booking__btn a:hover {
+    color: #fff;
+}
