@@ -5,14 +5,17 @@ import { Link } from 'react-router-dom'
 import './tour-card.css'
 
 const TourCard = ({ tour }) => {
-  const { id, title, city, photo, price, featured, avgRating, reviews } = tour;
+  const { id, title, city, photo, price, featured, reviews } = tour;
+
+  const totalRating = reviews?.reduce((acc, item) => acc + item.rating, 0);
+  const avgRating = totalRating === 0 ? "" : totalRating === 1 ? totalRating : totalRating / reviews?.length;
 
   return (
     <div className="tour__card">
         <Card>
             <div className="tour__img">
                 <img src={photo} alt="tour-image" />
-                <span>Featured</span>
+                { featured && <span>Featured</span>}
             </div>
 
             <CardBody>
