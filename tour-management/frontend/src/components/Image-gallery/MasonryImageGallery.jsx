@@ -11,10 +11,11 @@ const MasonryImageGallery = () => {
             {
                 gallerImages.map((item, index) => (
                     <img src={item} alt="" key={index}
+                        className="masonry__img"
                         style={{
-                            width : '100%',
-                            display: 'block',
-                            borderRadius: '10px'
+                            'width' : '100%',
+                            'display': 'block',
+                            'borderRadius': '10px'
                         }}
                     />
                 ))
