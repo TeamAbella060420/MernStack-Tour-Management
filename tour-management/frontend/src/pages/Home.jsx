@@ -111,7 +111,7 @@ const Home = () => {
                 </div>
                 <div className="counter__box">
                   <span>15</span>
-                  <h6>Years of experience</h6>
+                  <h6>Years experience</h6>
                 </div>
               </div>
             </Col>
