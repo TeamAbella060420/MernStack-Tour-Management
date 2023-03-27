@@ -11,6 +11,7 @@ import SearchBar from "../shared/SearchBar";
 
 import ServiceList from "../services/ServiceList";
 import FeaturedTourList from "../components/Featured-tours/FeaturedTourList";
+import MasonryImageGallery from "../components/Image-gallery/MasonryImageGallery";
 
 const Home = () => {
   return (
