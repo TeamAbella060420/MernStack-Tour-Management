@@ -125,6 +125,16 @@ const Home = () => {
         </Container>
       </section>
       {/* ==================== experience section end =================== */}
+
+      {/* ==================== gallery section section start =================== */}
+      <section>
+        <Container>
+          <Row>
+            <Col></Col>
+          </Row>
+        </Container>
+      </section>
+      {/* ==================== gallery section section end =================== */}
     </>
   );
 };
