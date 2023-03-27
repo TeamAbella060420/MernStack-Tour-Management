@@ -95,6 +95,24 @@ const Home = () => {
                 <Subtitle subtitle={'Experience'}/>
 
                 <h2>With our all experience <br /> we will serve you</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  <br />
+                  Suscipit maxime, facilis atque vero qui cupiditate.</p>
+              </div>
+
+              <div className="counter__wrapper d-flex align-items-center gap-5">
+                <div className="counter__box">
+                  <span>12k+</span>
+                  <h6>Successful Trip</h6>
+                </div>
+                <div className="counter__box">
+                  <span>2k+</span>
+                  <h6>Regular clients</h6>
+                </div>
+                <div className="counter__box">
+                  <span>15</span>
+                  <h6>Years of experience</h6>
+                </div>
               </div>
             </Col>
             <Col lg='6'>
