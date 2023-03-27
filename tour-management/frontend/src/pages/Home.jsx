@@ -136,6 +136,7 @@ const Home = () => {
               <h2 className="gallery__title">Visit our customers tour gallery</h2>
             </Col>
             <Col lg='12'>
+              <MasonryImageGallery />
             </Col>
           </Row>
         </Container>
