@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import '../Headers/header.css'
 import { Container, Row, Button } from 'reactstrap'
 import { Link, NavLink } from 'react-router-dom';
@@ -21,8 +21,26 @@ const nav__links = [
 ]
 
 const Header = () => {
+
+  const headerRef = useRef(null)
+
+  const stickyHeaderFunc = () => { // create function that adds and removes a class to toggle sticky navbar feature
+    window.addEventListener('scroll', () => { // add an event listener to the window scroll
+        if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80){ // checks whether window is scrolled over 80 pixels from the top
+            headerRef.current.classList.add('sticky__header') // adds a class to header element to make it sticky
+        } else {
+            headerRef.current.classList.remove('sticky__header') // removes class to make header element no longer sticky
+        }
+    })
+}
+
+useEffect(() => { // useEffect hook that calls stickyHeaderFunc to update sticky navbar
+  stickyHeaderFunc()
+  return () => window.removeEventListener('scroll', stickyHeaderFunc) // this cleanup function is to remove the event listener to prevent memory leak
+})
+
   return (
-    <header className="header">
+    <header className="header" ref={headerRef}>
       <Container>
         <Row>
           <div className="nav__wrapper d-flex align-items-center justify-content-between">
