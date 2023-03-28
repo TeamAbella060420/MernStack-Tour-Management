@@ -21,6 +21,9 @@ const NewsLetter = () => {
                     </div>
                 </Col>
                 <Col lg='6'>
+                    <div className="newsletter__img">
+                        <img src={maleTourist} alt="" />
+                    </div>
                 </Col>
             </Row>
         </Container>
