@@ -17,7 +17,10 @@ const Testimonial = () => {
         </p>
 
         <div className='d-flex align-items-center gap-4 mt-3'>
-          <img src={ava01} alt="" />
+          <img src={ava01} className='w-25 h-25 rounded-2' alt="" />
+          <div>
+            <h5></h5>
+          </div>
         </div>
       </div>
     </Slider>
