@@ -91,15 +91,27 @@ const Footer = () => {
           <Col lg='3'>
           <h5 className='footer__link-title'>Contact</h5>
           <ListGroup className='footer__quick-links'>
-              {
-                quick__links2.map((item, index) => (
-                  <ListGroupItem key={index} className='ps-0 border-0'>
-                    <Link to={item.path}>
-                      {item.display}
-                    </Link>
-                  </ListGroupItem>
-                ))
-              }
+            <ListGroupItem className='ps-0 border-0 d-flex align-item-center gap-3'>
+               <h6 className='mb-0 d-flex align-items-center gap-2'>
+                 <span><i class="ri-map-pin-line"></i></span>
+                 Address:
+               </h6>
+               <p className='mb-0'>Manila, Philippines</p>
+              </ListGroupItem>
+            <ListGroupItem className='ps-0 border-0 d-flex align-item-center gap-3'>
+               <h6 className='mb-0 d-flex align-items-center gap-2'>
+                 <span><i class="ri-mail-line"></i></span>
+                 Email:
+               </h6>
+               <p className='mb-0'>teamabella@outlook.com</p>
+              </ListGroupItem>
+            <ListGroupItem className='ps-0 border-0 d-flex align-item-center gap-3'>
+               <h6 className='mb-0 d-flex align-items-center gap-2'>
+                 <span><i class="ri-phone-line"></i></span>
+                 Mobile No.
+               </h6>
+               <p className='mb-0'>+639272632517</p>
+              </ListGroupItem>
             </ListGroup>
           </Col>
         </Row>
