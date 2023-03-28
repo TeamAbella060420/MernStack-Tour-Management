@@ -34,7 +34,6 @@ const Testimonial = () => {
         },
       },
     ]
-
   }
 
   return (
