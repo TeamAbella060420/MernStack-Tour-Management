@@ -44,7 +44,9 @@ const Tours = () => {
             <Col lg='12'>
               <div className="pagination d-flex align-item-center justify-content-center mt-4 gap-3">
                 {[...Array(pageCount).keys()].map(number => (
-                  <span key={number} onClick={number}>
+                  <span key={number} onClick={() => setPage(number)}
+                    className={page === number ? 'active__page' : ''}
+                  >
                     {number + 1}
                   </span>
                 ))}
