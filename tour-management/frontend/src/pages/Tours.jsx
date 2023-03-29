@@ -15,7 +15,7 @@ const Tours = () => {
   const [page, setPage] = useState(0);
 
   useEffect(() => {
-    const pages = Math.ceil(5/4)
+    const pages = Math.ceil(12/3)
     setPageCount(pages)
   }, [page])
 
@@ -55,6 +55,8 @@ const Tours = () => {
           </Row>
         </Container>
       </section>
+
+      <NewsLetter />
     </>
   )
 }
