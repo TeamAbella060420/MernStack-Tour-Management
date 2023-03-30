@@ -79,3 +79,31 @@
 .reviews__input input:focus {
     outline: none;
 }
+
+.review__item {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.review__item img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.user__reviews {
+    margin-top: 2.5rem;
+}
+
+.review__item h5 {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+.review__item p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
