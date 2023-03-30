@@ -5,3 +5,21 @@
     border-radius: .5rem;
     margin-bottom: 2.5rem;
 }
+
+.tour__info {
+    border-radius: .5rem;
+    border: 1px solid rgb(229, 231, 235);
+    padding: 2rem;
+}
+
+.tour__info h2{
+    font-style: 1.5rem;
+}
+
+.tour__info span {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 1rem;
+    color: var(--text-color);
+}
