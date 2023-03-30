@@ -77,7 +77,6 @@ const TourDetails = () => {
                       reviews?.map(review => (
                         <div className="review__item">
                           <img src={avatar} alt="" />
-
                           <div className="w-100">
                             <div className='d-flex align-items-center justify-content-between'>
                               <div>
