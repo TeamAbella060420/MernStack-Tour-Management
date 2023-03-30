@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom'
 import '../styles/tour-details.css'
 import tourData from '../assets/data/tours'
 import { calculateAvgRating } from "../utils/avgRating";
+import avatar from '../assets/images/avatar.jpg'
 
 const TourDetails = () => {
 
@@ -16,6 +17,8 @@ const TourDetails = () => {
   const { photo, title, desc, price, reviews, address, city, distance, maxGroupSize } = tour
 
   const {totalRating, avgRating} = calculateAvgRating(reviews)
+
+  // format date
   return (
     <>
       <section>
@@ -54,13 +57,38 @@ const TourDetails = () => {
 
                   <Form>
                     <div className='d-flex align-items-center gap-3 mb-4 rating__group'>
-                      <span><i class="ri-star-s-fill"></i></span>
-                      <span><i class="ri-star-s-fill"></i></span>
-                      <span><i class="ri-star-s-fill"></i></span>
-                      <span><i class="ri-star-s-fill"></i></span>
-                      <span><i class="ri-star-s-fill"></i></span>
+                      <span>1 <i class="ri-star-s-fill"></i></span>
+                      <span>2 <i class="ri-star-s-fill"></i></span>
+                      <span>3 <i class="ri-star-s-fill"></i></span>
+                      <span>4 <i class="ri-star-s-fill"></i></span>
+                      <span>5 <i class="ri-star-s-fill"></i></span>
+                    </div>
+
+                    <div className="reviews__input">
+                      <input type="text" placeholder='Share your thoughts'/>
+                      <button className="btn primary__btn text-white" type='submit'>Submit</button>
                     </div>
                   </Form>
+
+                  <ListGroup className='user__reviews'>
+                    {
+                      reviews?.map(review => (
+                        <div className="review__item">
+                          <img src={avatar} alt="" />
+
+                          <div className="w-100">
+                            <div className='d-flex align-items-center justify-content-between'>
+                              <h5>Muhandis</h5>
+                              <p>{new Date('06-04-2020').toLocaleString(
+                                'en-US'
+                              )}</p>
+                            </div>
+                          </div>
+                        </div>
+                      ))
+                    }
+                  </ListGroup>
+
                 </div>
                 {/*=============== tour reviews section end==================*/}
               </div>
