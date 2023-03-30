@@ -46,7 +46,8 @@ const TourDetails = () => {
                   <div className="tour__extra-details">
                     <span><i class="ri-map-pin-2-line"></i>{city}</span>
                     <span><i class="ri-money-dollar-box-line"></i> ${price} / per person</span>
-                    <span><i class="ri-group-line"></i>{maxGroupSize}</span>
+                    <span><i class="ri-map-pin-time-line"></i> {distance} k/m</span>
+                    <span><i class="ri-group-line"></i>{maxGroupSize} people</span>
                   </div>
 
                 <h5>Description</h5>
