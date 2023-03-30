@@ -51,6 +51,16 @@ const TourDetails = () => {
                 {/*=============== tour reviews section start==================*/}
                 <div className="tour__reviews mt-4">
                   <h4>Reviews ({reviews?.length} reviews)</h4>
+
+                  <Form>
+                    <div className='d-flex align-items-center gap-3 mb-4 rating__group'>
+                      <span><i class="ri-star-s-fill"></i></span>
+                      <span><i class="ri-star-s-fill"></i></span>
+                      <span><i class="ri-star-s-fill"></i></span>
+                      <span><i class="ri-star-s-fill"></i></span>
+                      <span><i class="ri-star-s-fill"></i></span>
+                    </div>
+                  </Form>
                 </div>
                 {/*=============== tour reviews section end==================*/}
               </div>
