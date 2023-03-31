@@ -62,7 +62,7 @@ const TourDetails = () => {
 
                   <Form>
                     <div className='d-flex align-items-center gap-3 mb-4 rating__group'>
-                      <span>1 <i class="ri-star-s-fill"></i></span>
+                      <span onClick={() => se}>1 <i class="ri-star-s-fill"></i></span>
                       <span>2 <i class="ri-star-s-fill"></i></span>
                       <span>3 <i class="ri-star-s-fill"></i></span>
                       <span>4 <i class="ri-star-s-fill"></i></span>
