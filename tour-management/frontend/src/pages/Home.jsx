@@ -18,8 +18,6 @@ import NewsLetter from "../shared/NewsLetter";
 const Home = () => {
   return (
     <>
-
-    
       {/* ==================== hero section start =================== */}
       <section>
         <Container>

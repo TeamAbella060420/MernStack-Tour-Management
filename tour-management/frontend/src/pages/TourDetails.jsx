@@ -1,5 +1,5 @@
 
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import { Container, Row, Col, Form, ListGroup  } from 'reactstrap'
 import { useParams } from 'react-router-dom'
 import '../styles/tour-details.css'
@@ -10,6 +10,8 @@ import avatar from '../assets/images/avatar.jpg'
 const TourDetails = () => {
 
   const { id } = useParams();
+  const reviewMsgRef = useRef('')
+  const [tourRating, setTourRating] = useState(null)
 
   // this is just a static data, late I will call the API and load our data form dataBase
   const tour = tourData.find(tour => tour.id === id)
