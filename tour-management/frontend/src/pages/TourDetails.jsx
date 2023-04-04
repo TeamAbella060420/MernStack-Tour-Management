@@ -6,6 +6,7 @@ import '../styles/tour-details.css'
 import tourData from '../assets/data/tours'
 import { calculateAvgRating } from "../utils/avgRating";
 import avatar from '../assets/images/avatar.jpg'
+import Booking from '../components/Booking/Booking'
 
 const TourDetails = () => {
 
@@ -116,7 +117,7 @@ const TourDetails = () => {
             </Col>
 
             <Col lg='4'>
-              
+              <Booking tour={tour} avgRating={avgRating}/>
             </Col>
           </Row>
         </Container>
