@@ -23,6 +23,15 @@ const TourDetails = () => {
   // format date
   const options = { day: 'numeric', month: 'long', year: 'numeric'}
 
+  // submit request to the server
+  const submitHandler = e => {
+    e.preventDefault()
+    const reviewText = reviewMsgRef.current.value;
+
+    alert(`${reviewText}, ${tourRating}`)
+    // later will call api
+  }
+
   return (
     <>
       <section>
@@ -60,17 +69,17 @@ const TourDetails = () => {
                 <div className="tour__reviews mt-4">
                   <h4>Reviews ({reviews?.length} reviews)</h4>
 
-                  <Form>
+                  <Form onSubmit={submitHandler}>
                     <div className='d-flex align-items-center gap-3 mb-4 rating__group'>
-                      <span onClick={() => setTourRating()}>1 <i class="ri-star-s-fill"></i></span>
-                      <span>2 <i class="ri-star-s-fill"></i></span>
-                      <span>3 <i class="ri-star-s-fill"></i></span>
-                      <span>4 <i class="ri-star-s-fill"></i></span>
-                      <span>5 <i class="ri-star-s-fill"></i></span>
+                      <span onClick={() => setTourRating(1)}>1 <i class="ri-star-s-fill"></i></span>
+                      <span onClick={() => setTourRating(2)}>2 <i class="ri-star-s-fill"></i></span>
+                      <span onClick={() => setTourRating(3)}>3 <i class="ri-star-s-fill"></i></span>
+                      <span onClick={() => setTourRating(4)}>4 <i class="ri-star-s-fill"></i></span>
+                      <span onClick={() => setTourRating(5)}>5 <i class="ri-star-s-fill"></i></span>
                     </div>
 
                     <div className="reviews__input">
-                      <input type="text" ref={reviews} placeholder='Share your thoughts'/>
+                      <input type="text" ref={reviewMsgRef} placeholder='Share your thoughts' required/>
                       <button className="btn primary__btn text-white" type='submit'>Submit</button>
                     </div>
                   </Form>
@@ -104,6 +113,10 @@ const TourDetails = () => {
                 </div>
                 {/*=============== tour reviews section end==================*/}
               </div>
+            </Col>
+
+            <Col lg='4'>
+              
             </Col>
           </Row>
         </Container>
