@@ -34,6 +34,15 @@ const Booking = ({ tour, avgRating }) => {
             </Form>
         </div>
         {/*=============== booking form end ==================*/}
+        {/*=============== booking form bottom ==================*/}
+        <div className="booking__bottom">
+            <ListGroup>
+                <ListGroupItem>
+                    <h5>$ {price} <i class="ri-close-line"></i> per person</h5>
+                </ListGroupItem>
+            </ListGroup>
+        </div>
+        {/*=============== booking form bottom ==================*/}
     </div>
   )
 }
