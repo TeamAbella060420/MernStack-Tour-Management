@@ -28,7 +28,7 @@ const Booking = ({ tour, avgRating }) => {
     const handleClick = e => {
         e.preventDefault()
 
-        console.log(credentials, 'sss');
+        navigate('/thank you');
     }
 
     const serviceFee = 10 
