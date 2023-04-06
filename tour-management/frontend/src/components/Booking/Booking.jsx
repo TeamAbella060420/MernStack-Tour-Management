@@ -94,7 +94,9 @@ const Booking = ({ tour, avgRating }) => {
                     <span> ${serviceFee}</span>
                 </ListGroupItem>
                 <ListGroupItem className='total border-0 px-0'>
-                    <h5>Total</h5>
+                    <h5>
+                        Total
+                    </h5>
                     <span> ${totalAmount}</span>
                 </ListGroupItem>
 
