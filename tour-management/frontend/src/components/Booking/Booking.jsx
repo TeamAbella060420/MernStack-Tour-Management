@@ -37,9 +37,20 @@ const Booking = ({ tour, avgRating }) => {
         {/*=============== booking form bottom ==================*/}
         <div className="booking__bottom">
             <ListGroup>
-                <ListGroupItem>
-                    <h5>$ {price} <i class="ri-close-line"></i> per person</h5>
+                <ListGroupItem className='border-0 px-0'>
+                    <h5 className='d-flex align-items-center gap-1'>$ {price} <i class="ri-close-line"></i> 1 person</h5>
+                    <span> ${price}</span>
                 </ListGroupItem>
+                <ListGroupItem className='border-0 px-0'>
+                    <h5>Service charge</h5>
+                    <span> $10</span>
+                </ListGroupItem>
+                <ListGroupItem className='border-0 px-0'>
+                    <h5>Total</h5>
+                    <span> $109</span>
+                </ListGroupItem>
+
+                <Button>Book Now</Button>
             </ListGroup>
         </div>
         {/*=============== booking form bottom ==================*/}
