@@ -28,13 +28,12 @@ const Booking = ({ tour, avgRating }) => {
     const handleClick = e => {
         e.preventDefault()
 
-        navigate('/thank you');
+        navigate('/thank-you');
     }
 
     const serviceFee = 10 
     const totalAmount = Number(price) * Number(credentials.Guest) + Number(serviceFee)
     const totalPrice = Number(price) * Number(credentials.Guest)
-    const Guest = Number(credentials.Guest)
 
   return (
     <div className="booking">
@@ -90,7 +89,7 @@ const Booking = ({ tour, avgRating }) => {
         <div className="booking__bottom">
             <ListGroup>
                 <ListGroupItem className='border-0 px-0'>
-                    <h5 className='d-flex align-items-center gap-1'>$ {price} <i class="ri-close-line"></i> {Guest} person</h5>
+                    <h5 className='d-flex align-items-center gap-1'>$ {price} <i class="ri-close-line"></i> 10 person</h5>
                     <span> ${totalPrice}</span>
                 </ListGroupItem>
                 <ListGroupItem className='border-0 px-0'>
