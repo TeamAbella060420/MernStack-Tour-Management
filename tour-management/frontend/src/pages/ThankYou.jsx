@@ -9,7 +9,7 @@ const ThankYou = () => {
     <section>
       <Container>
         <Row>
-          <Col lg='12'>
+          <Col lg='12' className='pt-5 text-center'>
             <div className="thank__you">
               <span>
                 <i class="ri-checkbox-circle-line"></i>
