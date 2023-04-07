@@ -1,0 +1,27 @@
+
+.login__img {
+    width: 60%;
+    text-align: center;
+}
+
+.login__img img {
+    width: 70%;
+    object-fit: contain;
+}
+
+.login__form {
+    padding: 50px;
+    background: var(--secondary-color);
+    position: relative;
+}
+
+.login__container {
+    box-shadow: rgba(17, 12, 46, .15);
+    margin-top: 100px;
+}
+
+.login__container .user {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+}
