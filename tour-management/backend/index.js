@@ -13,11 +13,27 @@ app.get('/', (req, res) => {
     res.send('api is working')
 })
 
-// middleware
+// database connection
+mongoose.set('strictQuery', false)
+const connect = async () => {
+    try {
+        await mongoose.connect(process.env.MONGO_URI, {
+            useNewUrlParser: true,
+            useUnifiedTopology: true,
+        });
+
+        console.log('MongoDB database connected');
+    } catch (error) {
+        console.log('MongoDB database connection failed');
+    }
+}
+
+// middleware 
 app.use(express.json());
 app.use(cors());
 app.use(cookieParser());
 
 app.listen(port, () => {
+    connect();
     console.log('server listening on port', port);
 })
