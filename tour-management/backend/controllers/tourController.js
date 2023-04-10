@@ -61,17 +61,37 @@ export const deleteTour = async(req,res) => {
 }
 // getSingle tour
 export const getSingleTour = async(req,res) => {
+    const id = req.params.id
+
     try {
-        
+        const tour = await Tour.findById(id)
+        res.status(200).json({
+            success: true,
+            message: 'Successfully single Get',
+            data: tour
+        })
     } catch (error) {
-        
+        res.status(404).json({
+            success: false,
+            message: 'Not found single tour'
+        })
     }
 }
 // getAll tour
 export const getAllTour = async(req,res) => {
+    const id = req.params.id
+
     try {
-        
+        const tours = await Tour.find({})
+        res.status(200).json({
+            success: true,
+            message: 'Successfully Get All',
+            data: tours
+        })
     } catch (error) {
-        
+        res.status(404).json({
+            success: false,
+            message: 'Not found All tour'
+        })
     }
 }
