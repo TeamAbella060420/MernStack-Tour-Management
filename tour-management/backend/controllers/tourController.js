@@ -78,11 +78,12 @@ export const getSingleTour = async(req,res) => {
     }
 }
 // getAll tour
-export const getAllTour = async(req,res) => {
-    const id = req.params.id
+export const getAllTour = async (req,res) => {
 
+    // for pagination
+    const page = parseInt(req.query.page)
     try {
-        const tours = await Tour.find({})
+        const tours = await Tour.find({}).skip(page * 8).limit(8)
         res.status(200).json({
             success: true,
             message: 'Successfully Get All',
