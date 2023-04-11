@@ -4,6 +4,7 @@ import {
      deleteTour,
      getAllTour,
      getSingleTour,
+     getTourBySearch,
      updateTour
 } from '../controllers/tourController.js'
 
@@ -21,7 +22,10 @@ router.delete('/:id', deleteTour)
 // getSingle tour
 router.get('/:id', getSingleTour)
 
-// getAll tour
-router.get('/:id', getAllTour)
+// getAll tours
+router.get('/', getAllTour)
+
+// get tour by search
+router.get('/search/getTourBySearch', getTourBySearch)
 
 export default router;
