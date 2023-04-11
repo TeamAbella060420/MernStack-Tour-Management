@@ -80,20 +80,17 @@ export const getSingleUser = async(req,res) => {
 // getAll User
 export const getAllUser = async (req,res) => {
 
-    // for pagination
-    const page = parseInt(req.query.page)
     try {
-        const Users = await User.find({}).skip(page * 8).limit(8)
+        const users = await User.find({})
         res.status(200).json({
             success: true,
-            count: Users.length,
-            message: 'Successfully Get All',
-            data: Users
+            message: 'Successful',
+            data: users
         })
     } catch (error) {
         res.status(404).json({
             success: false,
-            message: 'Not found All User'
+            message: 'Not found'
         })
     }
 }
