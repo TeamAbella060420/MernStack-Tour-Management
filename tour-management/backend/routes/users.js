@@ -1,14 +1,17 @@
 import express from 'express'
+import { deleteUser, getAllUser, getSingleUser, updateUser } from '../controllers/useController'
 const router = express.Router()
 
-// update tour
-router.put('/:id', updateTour)
+// update User
+router.put('/:id', updateUser)
 
-// delete new tour
-router.delete('/:id', deleteTour)
+// delete new User
+router.delete('/:id', deleteUser)
 
-// getSingle tour
-router.get('/:id', getSingleTour)
+// getSingle User
+router.get('/:id', getSingleUser)
 
-// getAll tours
-router.get('/', getAllTour)
+// getAll Users
+router.get('/', getAllUser)
+
+export default router;
