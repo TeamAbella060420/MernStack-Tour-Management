@@ -10,6 +10,7 @@ import {
      updateTour
 } from '../controllers/tourController.js';
 import { verifyAdmin } from '../utils/verifyToken.js';
+import { createReview } from '../controllers/reviewController.js';
 
 const router = express.Router()
 
@@ -23,7 +24,7 @@ router.put('/:id', verifyAdmin, updateTour)
 router.delete('/:id', verifyAdmin, deleteTour)
 
 // getSingle tour
-router.get('/:id', getSingleTour)
+router.get('/:id', createReview, getSingleTour)
 
 // getAll tours
 router.get('/', getAllTour)
