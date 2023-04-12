@@ -3,6 +3,6 @@ import { createReview } from '../controllers/reviewController.js';
 
 const router = express.Router()
 
-router.post('/:id', createReview)
+router.post('/:toursId', createReview)
 
 export default router;
